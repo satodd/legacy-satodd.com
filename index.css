@@ -17,15 +17,21 @@ h2 {
 /* Sarah Todd: */
 .banner {
 	background: #AACE5A;
-	border: 5px solid #979797;
-	height: 200px;
-	font-family: Harrington;
-	font-size: 144px;
-	color: #152423;
-	line-height: 169px;
-	text-align: center;
-	margin-top: 20px;
+	border: 5px solid #4E4E4E;
+	height: 150px;
+	width: 85%;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 	margin-bottom: 20px;
+
+
+	font-family: Harrington;
+	font-size: 100px;
+	color: #152423;
+	line-height: 150px;
+	text-align: center;
+
 }
 
 .decor {
@@ -37,13 +43,21 @@ h2 {
 	text-align: center;
 	color: #152423;
 	line-height: 36px;
+	width: 95%;
+	margin-left: auto;
+    margin-right: auto;
 	overflow: hidden;
 }
 
 .main {
 	background: #F3F3DD;
-	border: 1px solid #979797;
-	height: 515px;
+	border: 5px solid #4E4E4E;
+	border-top: 0px;
+	height: 400px;
+	width: 95%;
+	margin-left: auto;
+    margin-right: auto;
+
 }
 
 .bottom {
