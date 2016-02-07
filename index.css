@@ -1,6 +1,5 @@
 body {
 	background: #7ACFC9;
-	height: 500px;
 }
 
 img {
@@ -12,6 +11,12 @@ img {
 h2 {
 	float:left;
 }
+
+div {
+	display: block;
+	border: 10px;
+}
+
 
 
 /* Sarah Todd: */
@@ -26,7 +31,7 @@ h2 {
 	margin-bottom: 20px;
 
 
-	font-family: Harrington;
+	font-family: AppleGothic;
 	font-size: 100px;
 	color: #152423;
 	line-height: 150px;
@@ -37,38 +42,49 @@ h2 {
 .decor {
 	background: #D8D8D8;
 	border: 5px solid #4E4E4E;
-	height: 35;
-	font-family: BodoniOrnamentsITCTT;
-	font-size: 36px;
-	text-align: center;
 	color: #152423;
-	line-height: 36px;
-	width: 95%;
+	height: 35px;
+	width: 80%;
 	margin-left: auto;
     margin-right: auto;
 	overflow: hidden;
+
+	font-family: BodoniOrnamentsITCTT;
+	font-size: 36px;
+	text-align: center;
+	line-height: 36px;
 }
 
 .main {
 	background: #F3F3DD;
 	border: 5px solid #4E4E4E;
 	border-top: 0px;
+	border-bottom: 0px;
+
 	height: 400px;
-	width: 95%;
+	width: 80%;
 	margin-left: auto;
     margin-right: auto;
+    overflow: auto;
+}
 
+.main .left {
+	float: left;
+	height: 100%;
+	width: 50%;
+
+}
+
+.main .right {
+	float: right;
+	height: 100%;
+	width: 50%;
 }
 
 .bottom {
-	height: 250px;
+	height: 200px;
 	text-align: center;
-	line-height: 250px;
-}
-
-div {
-	display: block;
-	border: 10px;
+	line-height: 180px;
 }
 
 .contact, .intro, .education, .interests {
@@ -78,19 +94,19 @@ div {
 }
 
 .circles {
-	font-family: Harrington;
-	font-size: 30pt;
+	font-family: AppleGothic;
+	font-size: 20pt;
 	display: inline-block;
 	background: #D8D8D8;
 	border: 5px solid #505050;
 	border-radius: 50%;
-	width: 200px;
-	height: 200px;
-	line-height: 200px;
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
 }
 
 .circles:hover {
-	background: #FFFFFF;
+	background: #AACE5A;
 
 
 }
