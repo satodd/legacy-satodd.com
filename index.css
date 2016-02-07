@@ -1,0 +1,82 @@
+body {
+	background: #7ACFC9;
+	height: 500px;
+}
+
+img {
+	-ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: scale(0.5,0.5); /* Chrome, Safari, Opera */
+    transform: scale(0.5,0.5);
+}
+
+h2 {
+	float:left;
+}
+
+
+/* Sarah Todd: */
+.banner {
+	background: #AACE5A;
+	border: 5px solid #979797;
+	height: 200px;
+	font-family: Harrington;
+	font-size: 144px;
+	color: #152423;
+	line-height: 169px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.decor {
+	background: #D8D8D8;
+	border: 5px solid #4E4E4E;
+	height: 35;
+	font-family: BodoniOrnamentsITCTT;
+	font-size: 36px;
+	text-align: center;
+	color: #152423;
+	line-height: 36px;
+	overflow: hidden;
+}
+
+.main {
+	background: #F3F3DD;
+	border: 1px solid #979797;
+	height: 515px;
+}
+
+.bottom {
+	height: 250px;
+	text-align: center;
+	line-height: 250px;
+}
+
+div {
+	display: block;
+	border: 10px;
+}
+
+.contact, .intro, .education, .interests {
+	border: 10px;
+	float:right;
+	display: none;
+}
+
+.circles {
+	font-family: Harrington;
+	font-size: 30pt;
+	display: inline-block;
+	background: #D8D8D8;
+	border: 5px solid #505050;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+}
+
+.circles:hover {
+	background: #FFFFFF;
+
+
+}
