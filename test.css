@@ -1,0 +1,92 @@
+body {
+  background-color: #d8d8d8; }
+
+/* style from https://css-tricks.com/examples/hrs/ */
+hr.style-two {
+  border: 0;
+  height: 1px;
+  margin-top: 50px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+
+.bubble {
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation-name: float;
+  -webkit-animation-count: infinite;
+  animation-name: float;
+  animation-iteration-count: infinite; }
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1;
+  background: #D8D8D8; }
+
+#Sarah {
+  font-family: AmericanTypewriter;
+  font-size: 72px;
+  top: 25%;
+  left: 35%;
+  position: absolute;
+  z-index: 2;
+  color: #152423; }
+
+#background {
+  width: 95%;
+  height: 105%;
+  margin-top: -1%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background-color: #f45f5f;
+  overflow: hidden; }
+
+#links {
+  font-family: AmericanTypewriter;
+  font-size: 20px;
+  left: 15%;
+  position: relative;
+  z-index: 1;
+  color: #152423; }
+
+.divider {
+  margin-top: 50%;
+  height: 10px;
+  background-color: black;
+  border: black solid 3px;
+  position: relative; }
+
+#content {
+  height: 0px;
+  width: 0px; }
+
+@-webkit-keyframes float {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@keyframes float {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@-webkit-keyframes float {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@keyframes float {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+
+/*# sourceMappingURL=test.css.map */

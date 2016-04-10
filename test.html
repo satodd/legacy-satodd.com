@@ -1,0 +1,43 @@
+<DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sarah Todd :)</title>
+		<link rel="stylesheet" type="text/css" href="test.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<div id="background">		
+			<div id="Sarah"> Sarah Todd 
+				<hr class="style-two"/>
+					<div id="links"> 
+						<button onclick="expand()">Education</button>[]
+						<button onclick="expand()">Portfolio </button>[]
+						<button onclick="expand()">Contact</button> 
+					</div>
+					<div id="content">
+					</div>
+				<hr class="style-two"/>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			var num = Math.floor((Math.random() * 500)+100);
+			console.log(num);
+			for (i=0; i < num;i++){
+				var xPos = Math.floor((Math.random() * 100)+1);
+				var speed = Math.floor((Math.random() * 50)+10);
+				var diameter = Math.floor((Math.random() * 50)+5);
+
+				$("#background").append('<div class="bubble"  style="left: '+ xPos +'%;\
+														    	-webkit-animation-duration: '+ speed +'s;\
+														    	animation-duration:'+ speed +'s; \
+														    	width:'+diameter+'; \
+																height:'+diameter+';"  ></div>');
+			}
+		});
+
+
+	</script>
+</html>
