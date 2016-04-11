@@ -11,9 +11,9 @@
 			<div id="Sarah"> 
 				<img src="name_bg.png"></img>
 				<div id="links"> 
-					<button id="education">Education</button> []
-					<button id="portfolio" onclick="expand()">Portfolio </button> []
-					<button id="contact" onclick="expand()">Contact</button> 
+					<button id="education" onclick="info('education')">Education</button> []
+					<button id="portfolio" onclick="info('portfolio')">Portfolio </button> []
+					<button id="contact" onclick="info('contact')">Contact</button> 
 				</div>
 			</div>
 			<div id="contents"></div>
@@ -37,11 +37,12 @@
 			}
 		});
 
-		$("#education").click(function(){
+		function info(type) {
+
 			$("#contents").empty();
 			$("#contents").width(100).height(100);
-			$("#contents").append('<button id="exit" onclick="exit()">X</button>')
-		});
+			$("#contents").append('<button id="exit" onclick="exit()">X</button> <p>'+type+'</p>');
+		};
 
 		function exit() {
 			$("#contents").empty();
