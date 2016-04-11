@@ -14,7 +14,8 @@ hr.style-two {
   -webkit-animation-name: float;
   -webkit-animation-count: infinite;
   animation-name: float;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  box-shadow: 1px -2px #FFFFFF; }
 
 #Sarah {
   font-family: AmericanTypewriter;
@@ -45,9 +46,10 @@ hr.style-two {
 #contents {
   position: absolute;
   border-radius: 25%;
-  margin-top: 46%;
+  margin-top: 25%;
   background: #D8D8D8;
-  z-index: 2; }
+  z-index: 1;
+  box-shadow: 4px 10px 5px #888888; }
 
 .circle {
   width: 200px;
