@@ -1,7 +1,7 @@
 body {
   background-color: #d8d8d8; }
 
-/* style from https://css-tricks.com/examples/hrs/ */
+/* hr style from https://css-tricks.com/examples/hrs/ */
 hr.style-two {
   border: 0;
   height: 1px;
@@ -15,13 +15,6 @@ hr.style-two {
   -webkit-animation-count: infinite;
   animation-name: float;
   animation-iteration-count: infinite; }
-
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  z-index: 1;
-  background: #D8D8D8; }
 
 #Sarah {
   font-family: AmericanTypewriter;
@@ -50,14 +43,20 @@ hr.style-two {
   color: #152423; }
 
 #contents {
-  height: 0px;
-  width: 0px;
   position: absolute;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  margin-top: 460px;
-  background: #D8D8D8; }
+  border-radius: 25%;
+  margin-top: 46%;
+  background: #D8D8D8;
+  z-index: 2; }
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 1;
+  background: #D8D8D8;
+  -webkit-animation-name: appear;
+  animation-name: appear; }
 
 @-webkit-keyframes float {
   0% {
@@ -81,6 +80,34 @@ hr.style-two {
     background: #81FFE4;
     top: -5%; } }
 @keyframes float {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@-webkit-keyframes appear {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@keyframes appear {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@-webkit-keyframes appear {
+  0% {
+    background: #2E83AF;
+    top: 100%; }
+  100% {
+    background: #81FFE4;
+    top: -5%; } }
+@keyframes appear {
   0% {
     background: #2E83AF;
     top: 100%; }

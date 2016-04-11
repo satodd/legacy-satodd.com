@@ -11,7 +11,7 @@
 			<div id="Sarah"> 
 				<img src="name_bg.png"></img>
 				<div id="links"> 
-					<button id="education" onclick="expandEdu()">Education</button> []
+					<button id="education">Education</button> []
 					<button id="portfolio" onclick="expand()">Portfolio </button> []
 					<button id="contact" onclick="expand()">Contact</button> 
 				</div>
@@ -37,22 +37,18 @@
 			}
 		});
 
-		function expandEdu() {
+		$("#education").click(function(){
+			$("#contents").empty();
+			$("#contents").width(100).height(100);
+			$("#contents").append('<button id="exit" onclick="exit()">X</button>')
+		});
 
-
+		function exit() {
+			$("#contents").empty();
+			$("#contents").width(0).height(0);
+			console.log("clicked!")
 		}
+
+
 	</script>
 </html>
-
-
-
-
-				<!---<hr class="style-two"/>
-					<div id="links"> 
-						<button id="education" onclick="expand()">Education</button>[]
-						<button id="portfolio" onclick="expand()">Portfolio </button>[]
-						<button id="contact" onclick="expand()">Contact</button> 
-					</div>
-					<div id="content">
-					</div>
-				<hr class="style-two"/> -->
