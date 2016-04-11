@@ -7,23 +7,22 @@
 
 	</head>
 	<body>
-		<div id="background">		
-			<div id="Sarah"> Sarah Todd 
-				<hr class="style-two"/>
-					<div id="links"> 
-						<button onclick="expand()">Education</button>[]
-						<button onclick="expand()">Portfolio </button>[]
-						<button onclick="expand()">Contact</button> 
-					</div>
-					<div id="content">
-					</div>
-				<hr class="style-two"/>
+		<div id="background">
+			<div id="Sarah"> 
+				<img src="name_bg.png"></img>
+				<div id="links"> 
+					<button id="education" onclick="expandEdu()">Education</button> []
+					<button id="portfolio" onclick="expand()">Portfolio </button> []
+					<button id="contact" onclick="expand()">Contact</button> 
+				</div>
 			</div>
+			<div id="contents"></div>
 		</div>
 	</body>
+
 	<script>
 		$(document).ready(function(){
-			var num = Math.floor((Math.random() * 500)+100);
+			var num = Math.floor((Math.random() * 100)+50);
 			console.log(num);
 			for (i=0; i < num;i++){
 				var xPos = Math.floor((Math.random() * 100)+1);
@@ -38,6 +37,22 @@
 			}
 		});
 
+		function expandEdu() {
 
+
+		}
 	</script>
 </html>
+
+
+
+
+				<!---<hr class="style-two"/>
+					<div id="links"> 
+						<button id="education" onclick="expand()">Education</button>[]
+						<button id="portfolio" onclick="expand()">Portfolio </button>[]
+						<button id="contact" onclick="expand()">Contact</button> 
+					</div>
+					<div id="content">
+					</div>
+				<hr class="style-two"/> -->
