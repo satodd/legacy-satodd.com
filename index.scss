@@ -1,6 +1,7 @@
 
 body{
 	background-color: rgb(216,216,216);
+	justify-content:center;
 
 }
 
@@ -19,9 +20,7 @@ hr.style-two {
 	-webkit-animation-count:infinite;
 	animation-name: float;
 	animation-iteration-count:infinite;
-	box-shadow: 1px -2px #FFFFFF;
-
-
+	box-shadow: 0px -2px #FFFFFF;
 }
 
 #Sarah {
@@ -32,6 +31,9 @@ hr.style-two {
 	position: absolute;
 	z-index: 2;
 	color: #152423;
+}
+#Sarah img {
+	box-shadow: 10px -2px #FFFFFF;
 }
 
 #background {
@@ -54,23 +56,12 @@ hr.style-two {
 }
 
 #contents {
-	position: absolute;
+	position: relative;
 	border-radius: 25%;
-	margin-top: 25%;
+	top: 40%;
+	left: 10%;
 	background: #D8D8D8;
 	z-index: 1;
-	box-shadow: 4px 10px 5px #888888;
-}
-
-
-.circle{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	z-index: 1;
-	background: #D8D8D8;
-	-webkit-animation-name: appear; 
-	animation-name: appear;
 }
 
 
@@ -100,35 +91,4 @@ hr.style-two {
 	100% {background: #81FFE4;
 		  top:-5%;}
 }
-
-
-
-
-@-webkit-keyframes appear {
-	0%   {background: #2E83AF; 
-		  top:100%;}
-	100% {background: #81FFE4; 
-		  top:-5%;}
-}
-@keyframes appear {
-	0%   {background: #2E83AF; 
-		  top:100%;}
-	100% {background: #81FFE4;
-		  top:-5%;}
-}
-
-
-@-webkit-keyframes appear {
-	0%   {background: #2E83AF; 
-		  top:100%;}
-	100% {background: #81FFE4; 
-		  top:-5%;}
-}
-@keyframes appear {
-	0%   {background: #2E83AF; 
-		  top:100%;}
-	100% {background: #81FFE4;
-		  top:-5%;}
-}
-
 

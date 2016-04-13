@@ -1,9 +1,14 @@
 <DOCTYPE HTML>
 <html>
 	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<title>Sarah Todd :)</title>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css" charset="utf-8">
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 	</head>
 	<body>
@@ -20,36 +25,11 @@
 		</div>
 	</body>
 
-	<script>
-		$(document).ready(function(){
-			var num = Math.floor((Math.random() * 100)+50);
-			console.log(num);
-			for (i=0; i < num;i++){
-				var xPos = Math.floor((Math.random() * 100)+1);
-				var speed = Math.floor((Math.random() * 50)+10);
-				var diameter = Math.floor((Math.random() * 50)+5);
-
-				$("#background").append('<div class="bubble"  style="left: '+ xPos +'%;\
-														    	-webkit-animation-duration: '+ speed +'s;\
-														    	animation-duration:'+ speed +'s; \
-														    	width:'+diameter+'; \
-																height:'+diameter+';"  ></div>');
-			}
-		});
-
-		function info(type) {
-
-			$("#contents").empty();
-			$("#contents").width(500).height(500);
-			$("#contents").append('<button id="exit" onclick="exit()">X</button> <p>'+type+'</p>');
-		};
-
-		function exit() {
-			$("#contents").empty();
-			$("#contents").width(0).height(0);
-			console.log("clicked!")
-		}
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="sarah.js"></script>
 
 
-	</script>
 </html>
