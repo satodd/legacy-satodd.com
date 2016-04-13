@@ -1,13 +1,5 @@
 body {
-  background-color: #d8d8d8;
-  justify-content: center; }
-
-/* hr style from https://css-tricks.com/examples/hrs/ */
-hr.style-two {
-  border: 0;
-  height: 1px;
-  margin-top: 50px;
-  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent); }
+  background-color: #d8d8d8; }
 
 .bubble {
   border-radius: 50%;
@@ -18,42 +10,42 @@ hr.style-two {
   animation-iteration-count: infinite;
   box-shadow: 0px -2px #FFFFFF; }
 
-#Sarah {
-  font-family: AmericanTypewriter;
-  font-size: 72px;
-  top: -7%;
-  right: -5%;
+#background {
+  width: 99%;
+  height: 99.9%;
+  background-color: #f45f5f;
+  overflow: hidden;
+  margin: auto;
+  position: relative; }
+
+#cloud {
+  right: -7%;
   position: absolute;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.95;
+  line-height: 5%; }
+
+#text {
   z-index: 2;
+  margin-top: -55%;
+  font-family: Georgia;
+  font-size: 72px;
   color: #152423; }
 
-#Sarah img {
-  box-shadow: 10px -2px #FFFFFF; }
-
-#background {
-  width: 95%;
-  height: 95%;
-  margin-top: 2.5%;
-  margin-bottom: 2.3%;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  background-color: #f45f5f;
-  overflow: hidden; }
+#banner {
+  font-size: 72px;
+  color: #152423; }
 
 #links {
-  font-family: AmericanTypewriter;
   font-size: 20px;
-  margin-top: -25%;
-  margin-left: 32%;
-  color: #152423; }
+  color: #152423;
+  z-index: 2;
+  margin-top: -5%; }
 
 #contents {
-  position: relative;
   border-radius: 25%;
-  top: 40%;
-  left: 10%;
-  background: #D8D8D8;
-  z-index: 1; }
+  background: #D8D8D8; }
 
 @-webkit-keyframes float {
   0% {
