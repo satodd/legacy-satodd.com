@@ -1,6 +1,3 @@
-body {
-  background-color: #d8d8d8; }
-
 .bubble {
   border-radius: 50%;
   position: relative;
@@ -11,26 +8,21 @@ body {
   box-shadow: 0px -2px #FFFFFF; }
 
 #background {
-  width: 97%;
-  height: 97%;
+  height: 99.9%;
   background-color: #f45f5f;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1.5%;
-  margin-bottom: 1.5%;
-  position: relative; }
+  margin: auto;
+  position: relative;
+  border: solid #d8d8d8 30px; }
 
 #banner {
   right: -7%;
   position: absolute;
   text-align: center;
   opacity: 0.99;
-  line-height: 5%;
   z-index: 1; }
 
 #text {
-  z-index: 2;
   margin-top: -55%;
   font-family: Georgia;
   font-size: 72px;
@@ -38,25 +30,24 @@ body {
   z-index: 1; }
 
 #cloud {
-  font-size: 72px;
   color: #152423;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: -1px; }
 
 #links {
   font-size: 20px;
   color: #152423;
-  z-index: 2;
-  margin-top: -5%;
-  z-index: 1; }
+  z-index: 1;
+  margin-top: -25%; }
 
 #contents {
   border-radius: 15%;
   position: absolute;
   text-align: center;
   background: #D8D8D8;
-  z-index: 2;
+  z-index: 1;
   left: 5%;
-  top: 10%; }
+  bottom: 2%; }
 
 #exit {
   border-radius: 25%;

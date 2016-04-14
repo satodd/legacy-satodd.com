@@ -1,8 +1,4 @@
 
-body{
-	background-color: rgb(216,216,216);
-}
-
 .bubble {
 	border-radius: 50%;
     position: relative;
@@ -15,15 +11,12 @@ body{
 }
 
 #background {
-	width: 97%;
-	height: 97%;
+	height: 99.9%;
 	background-color: rgb(244,95,95);
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1.5%;
-	margin-bottom: 1.5%;
+	margin: auto;
 	position: relative;
+	border: solid rgb(216,216,216) 30px;
 }
 
 #banner {
@@ -31,13 +24,11 @@ body{
 	position: absolute;
 	text-align: center;
 	opacity: 0.99;
-	line-height: 5%;
 	z-index: 1;
 
 }
 
 #text {
-	z-index: 2;
 	margin-top: -55%;
 	font-family: Georgia;
 	font-size: 72px;
@@ -47,18 +38,17 @@ body{
 }
 
 #cloud {
-	font-size: 72px;
 	color: #152423;
 	z-index: 1;
+	margin-top: -1px;
 
 }
 
 #links {
 	font-size: 20px;
 	color: #152423;
-	z-index: 2;
-	margin-top: -5%;
 	z-index: 1;
+	margin-top: -25%;
 }
 
 #contents {
@@ -66,9 +56,9 @@ body{
 	position: absolute;
 	text-align: center;
 	background: #D8D8D8;
-	z-index: 2;
+	z-index: 1;
 	left: 5%;
-	top: 10%;
+	bottom: 2%;
 }
 
 #exit {
