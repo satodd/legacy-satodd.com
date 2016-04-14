@@ -14,11 +14,13 @@ body{
 }
 
 #background {
-	width: 99%;
-	height: 99.9%;
+	width: 97%;
+	height: 97%;
 	background-color: rgb(244,95,95);
 	overflow: hidden;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
 	position: relative;
 }
 
@@ -27,7 +29,7 @@ body{
 	position: absolute;
 	text-align: center;
 	z-index: 1;
-	opacity: 0.95;
+	opacity: 0.99;
 	line-height: 5%;
 
 }
