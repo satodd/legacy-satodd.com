@@ -17,37 +17,52 @@ body {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
   position: relative; }
 
-#cloud {
+#banner {
   right: -7%;
   position: absolute;
   text-align: center;
-  z-index: 1;
   opacity: 0.99;
-  line-height: 5%; }
+  line-height: 5%;
+  z-index: 1; }
 
 #text {
   z-index: 2;
   margin-top: -55%;
   font-family: Georgia;
   font-size: 72px;
-  color: #152423; }
+  color: #152423;
+  z-index: 1; }
 
-#banner {
+#cloud {
   font-size: 72px;
-  color: #152423; }
+  color: #152423;
+  z-index: 1; }
 
 #links {
   font-size: 20px;
   color: #152423;
   z-index: 2;
-  margin-top: -5%; }
+  margin-top: -5%;
+  z-index: 1; }
 
 #contents {
+  border-radius: 15%;
+  position: absolute;
+  text-align: center;
+  background: #D8D8D8;
+  z-index: 2;
+  left: 5%;
+  top: 10%; }
+
+#exit {
   border-radius: 25%;
-  background: #D8D8D8; }
+  position: absolute;
+  bottom: 10%;
+  text-align: center; }
 
 @-webkit-keyframes float {
   0% {
