@@ -1,3 +1,6 @@
+button {
+  border-radius: 25%; }
+
 .bubble {
   border-radius: 50%;
   position: relative;
@@ -10,16 +13,15 @@
 #background {
   height: 99.9%;
   background-color: #f45f5f;
-  overflow: hidden;
   margin: auto;
   position: relative;
+  overflow: hidden;
   border: solid #d8d8d8 30px; }
 
 #banner {
   right: -7%;
   position: absolute;
   text-align: center;
-  opacity: 0.99;
   z-index: 1; }
 
 #text {
@@ -44,16 +46,19 @@
   border-radius: 15%;
   position: absolute;
   text-align: center;
-  background: #D8D8D8;
-  z-index: 1;
-  left: 5%;
-  bottom: 2%; }
+  background: #FFFFFF;
+  z-index: 1; }
 
 #exit {
   border-radius: 25%;
   position: absolute;
   bottom: 10%;
   text-align: center; }
+
+/*http://stackoverflow.com/questions/23261642/how-to-reduce-the-spacing-between-rows-designing-with-bootstrap */
+.row-bottom-margin {
+  margin-bottom: -20px;
+  margin-top: 20px; }
 
 @-webkit-keyframes float {
   0% {

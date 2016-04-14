@@ -19,6 +19,7 @@ function info(type) {
 	$("#contents").empty();
 	$("#contents").width(400).height(400);
 	$("#contents").append('<button id="exit" onclick="exit()">X</button> <p>'+type+'</p>');
+	$("#banner").attri("display","none")
 };
 
 function exit() {
