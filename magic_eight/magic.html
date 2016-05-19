@@ -1,0 +1,62 @@
+<DOCTYPE HTML>
+
+<HTML>
+	<HEAD>	
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Magic 8-Ball</title>
+		<!-- Bootstrap -->
+	    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="magic.css" charset="utf-8">
+		
+	</HEAD>
+
+	<BODY>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>
+					<center>Magic 8-Ball </center>
+				</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<form role="form">
+							<div class="form-group">
+							<label for="question">Ask your question:</label> <br/>
+								<input type="text" class="form-control input-lg" id="question" placeholder="Should I hire Sarah?"><br/>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<div class="col-xs-5"></div>
+						<div class="col-xs-2">
+							<button onclick="shake()">Shake!</button>
+						</div>
+						<div class="col-xs-5"></div>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id="ball" >
+						<div id="inner"></div>
+						<div id="eight"> 8 </div>
+						<div id="answer"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</BODY>
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="magic.js"></script>
+
+</HTML>

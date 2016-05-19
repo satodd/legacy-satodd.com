@@ -1,0 +1,15 @@
+<DOCTYPE HTML>
+
+<HTML>
+	<HEAD>
+		<title>Magic 8-Ball</title>
+		<link rel="stylesheet" type="text/css" href="eightball.css" charset="utf-8">
+		
+	</HEAD>
+
+	<BODY>
+	</BODY>
+	
+	<script src="magic.js"></script>
+
+</HTML>
