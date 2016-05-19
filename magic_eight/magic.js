@@ -1,17 +1,34 @@
+$("document").ready(function () {
+	$(".alert").hide();
+	$("#again").hide();
+	
+	$("#eight").html("8");
+});
+
 
 function shake() {	
 
-	var question = $("#question").val();
+	var input = $("#question").val();
+	var question = input.toLowerCase();
+	
+	console.log(question)
 
 	//if question is blank
 	if (question == "") {
-		alert("Please enter a question");
-		}
+		$(".alert").fadeIn();
+		setTimeout(again, 2000);
+	}
+	else if (question == "should i hire sarah") {
+		$("#ball").addClass("ballshake");
+		$("#eight").fadeOut();
+		setTimeout(function() {
+			$("#answer").html("Without a doubt");
+			}, 2500);
+	}
 	else {
 		$("#ball").addClass("ballshake");
-		$("#eight").empty();
-		
 		setTimeout(answer, 2500);
+		$("#eight").fadeOut();
 	};
 };
 
@@ -38,14 +55,18 @@ function answer() {
 				"Outlook not so good",
 				"Very doubtful" ];
 				
-	$("#answer").html(ansText[num] + "<br/><br/><button onclick=again() class=\"btn btn-default\">Try Again?</button>");
-			console.log("added!");
-
+	$("#answer").html(ansText[num] + "<br/><br/>")
+	//<button onclick=again() class=\"btn btn-default\">Try Again?</button>")).fadeIn();
+	$("#btnshake").hide();
+	$("#again").show();
 	};
 
 function again() {
+	$(".alert").fadeOut();
 	$("#answer").empty();
+	$("#eight").fadeIn();
 	$("#eight").html("8");
+	$("#btnshake").show();
+	$("#again").hide();
 	$("#ball").removeClass("ballshake");
-	$("#shakebtn").prop('disabled', false);
 }

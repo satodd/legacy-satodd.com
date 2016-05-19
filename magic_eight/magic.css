@@ -6,7 +6,7 @@ label {
 	font-size: 20px;
 	color: white;
 }
-button {
+.btn {
     display: block;
 	margin: auto;
 	border: 3px white solid;
@@ -26,6 +26,7 @@ button {
 	text-align: center;
 	display: block;
 	margin: auto;
+	margin-top:30px;
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -56,12 +57,12 @@ button {
 	color: black;
 }
 #answer {
-	margin-top: 30%;
+	margin-top: -40%;
 	margin-left: auto;	
 	margin-right: auto;
 	position: relative;
 	width: 250px;
-	font-size: 2em;
+	font-size: 3em;
 	color: black;
 	
 }
