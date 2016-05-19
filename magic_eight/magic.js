@@ -1,7 +1,7 @@
 $("document").ready(function () {
 	$(".alert").hide();
 	$("#again").hide();
-	
+	$("#answer").fadeOut();
 	$("#eight").html("8");
 });
 
@@ -56,13 +56,14 @@ function answer() {
 				"Very doubtful" ];
 				
 	$("#answer").html(ansText[num] + "<br/><br/>")
-	//<button onclick=again() class=\"btn btn-default\">Try Again?</button>")).fadeIn();
+	$("#answer").fadeIn();
 	$("#btnshake").hide();
 	$("#again").show();
 	};
 
 function again() {
 	$(".alert").fadeOut();
+	$("#answer").fadeOut();
 	$("#answer").empty();
 	$("#eight").fadeIn();
 	$("#eight").html("8");
