@@ -1,3 +1,5 @@
+
+
 $("document").ready(function () {
 	$(".alert").hide();
 	$("#again").hide();
@@ -17,7 +19,7 @@ function shake() {
 		$(".alert").fadeIn();
 		setTimeout(again, 2000);
 	}
-	else if ((question == "should i hire sarah") || question == "should i hire sarah?"  {
+	else if ((question == "should i hire sarah") || (question == "should i hire sarah?"))  {
 		$("#ball").addClass("ballshake");
 		$("#eight").fadeOut();
 		setTimeout(function() {
