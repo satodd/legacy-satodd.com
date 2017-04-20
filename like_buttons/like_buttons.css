@@ -1,0 +1,62 @@
+.button_background {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(30%, rgba(255, 255, 255, 0.2) 35%, rgba(0, 0, 0, 0.18) 65%);
+  border-radius: 25px;
+  position: relative;
+}
+.button_background.liked {
+  background: #FF5252;
+}
+.button_background.unliked {
+  background: #D8D8D8;
+}
+.base {
+  height: 50px;
+  width: 200px;
+  background: #D8D8D8;
+  border-radius: 0px 0px 25px 25px;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  text-align: center;
+}
+.like_text {
+  padding-bottom: 5px;
+}
+.circle_button {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  border: 1px solid #D8D8D8;
+  box-shadow: 0 0px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 42.5px;
+  top: 15px;
+}
+.circle_button.liked {
+  background: #D8D8D8;
+}
+.circle_button.unliked {
+  background: #FF5252;
+}
+.circle_button:active:enabled {
+  box-shadow: inset 0 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.circle_button:active:enabled .heart_container {
+  transform: scale(0.9);
+}
+.heart_container {
+  padding-top: 10px;
+}
+.heart {
+  stroke: #FF5252;
+  stroke-width: 3;
+}
+.heart.unliked {
+  fill: #D8D8D8;
+}
+.heart.liked {
+  fill: #FF5252;
+}
