@@ -1,29 +1,16 @@
-$(document).ready(function(){
-			var num = 25;
-			console.log(num);
-			for (i=0; i < num;i++){
-				var xPos = Math.floor((Math.random() * 100)+1);
-				var speed = Math.floor((Math.random() * 50)+10);
-				var diameter = Math.floor((Math.random() * 50)+5);
+document.addEventListener("DOMContentLoaded", function() {
+	let num = 25;
 
-				$("#background").append('<div class="bubble"  style="left: '+ xPos +'%;\
-														    	-webkit-animation-duration: '+ speed +'s;\
-														    	animation-duration:'+ speed +'s; \
-														    	width:'+diameter+'; \
-																height:'+diameter+';"  ></div>');
-			}
-		});
+	for (i=0; i < num; i++) {
+		let xPos = Math.floor((Math.random() * 100)+1);
+		let speed = Math.floor((Math.random() * 50)+10);
+		let diameter = Math.floor((Math.random() * 50)+5);
 
-function info(type) {
-
-	$("#contents").empty();
-	$("#contents").width(400).height(400);
-	$("#contents").append('<button id="exit" onclick="exit()">X</button> <p>'+type+'</p>');
-	$("#banner").attri("display","none")
-};
-
-function exit() {
-	$("#contents").empty();
-	$("#contents").width(0).height(0);
-	console.log("clicked!")
-}
+		let background = document.getElementById("background")
+		background.innerHTML += ('<div class="bubble"  style="left: '+ xPos +'%;\
+							    	-webkit-animation-duration: '+ speed +'s;\
+							    	animation-duration:'+ speed +'s; \
+							    	width:'+diameter+'; \
+									height:'+diameter+';"  ></div>');
+	}
+});
